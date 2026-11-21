@@ -1,0 +1,26 @@
+name: Feature request
+description: Propose a focused capability, skill, or workflow improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Concrete problem or friction
+      description: What real task is blocked or slow right now?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest clean change that solves the problem, including acceptance criteria.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Counterexamples or tradeoffs
+      description: When would this change be unnecessary or harmful?
+    validations:
+      required: false

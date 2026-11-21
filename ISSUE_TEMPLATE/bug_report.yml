@@ -1,0 +1,33 @@
+name: Bug report
+description: Report a reproducible defect with exact commands and environment details
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include exact commands, commit SHA or release tag, and observed output so the issue can be reproduced cleanly. Do not include API secrets or tokens.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Plain description of the failure versus expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal commands or inputs that trigger the defect.
+      placeholder: |
+        1. Run `...`
+        2. Observe exit code / output `...`
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Commit SHA, release tag, and runtime
+      placeholder: "v1.4.1 / Node 22.14 / Python 3.12 / Ubuntu 24.04"
+    validations:
+      required: true
